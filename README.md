@@ -20,6 +20,7 @@ It is a real-time messaging application built with FirebaseV10 (Firestore) and R
 * ReactJs
 * JavaScript
 * FirebaseV10.1.0 Firestore - Real-time database
+* SCSS
 * Firebase Email-Password Authentication
 * React-router-dom
 * ContextApi
