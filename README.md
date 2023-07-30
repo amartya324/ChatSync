@@ -1,5 +1,5 @@
-# ![logo](https://github.com/amartya324/ChatSync/assets/77157125/4171dfcc-a4d1-49b9-9bd4-93a2d00f5b86) 
 # ChatSync
+# ![logo](https://github.com/amartya324/ChatSync/assets/77157125/4171dfcc-a4d1-49b9-9bd4-93a2d00f5b86) 
 It is a real-time messaging application built with FirebaseV10 (Firestore) and ReactJs.
 # [Live Demo](https://chatsync.netlify.app/)
 # Features
@@ -22,3 +22,5 @@ It is a real-time messaging application built with FirebaseV10 (Firestore) and R
 * FirebaseV10.1.0 Firestore - Real-time database
 * Firebase Email-Password Authentication
 * React-router-dom
+* ContextApi
+* uuid
