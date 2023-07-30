@@ -15,7 +15,7 @@
     @content;
   }
 }
-// scroll-bar
+// scroll-ba
 
 .formContainer {
   background: linear-gradient(90deg, rgb(39, 0, 80), rgb(0, 0, 0));
@@ -111,7 +111,7 @@
     display: flex;
     overflow: hidden;
     @include tablet {
-      width: 90%;
+      width: 95%;
     }
 
     .sidebar {
@@ -142,10 +142,17 @@
         gap: 10px;
       }
       img {
-        height: 25px;
-        width: 25px;
+        height: 35px;
+        width: 35px;
         border-radius: 50%;
         object-fit: cover;
+      }
+      .name {
+        @include tablet() {
+          position: absolute;
+          bottom: 30px;
+          left: 15px;
+        }
       }
 
       button {
@@ -157,7 +164,8 @@
 
         @include tablet {
           position: absolute;
-          bottom: 10px;
+          bottom: 25px;
+          right: 10px;
           padding: 10px;
         }
       }
@@ -214,26 +222,25 @@
     }
 
     .chat {
-      flex: 2;
+      flex: 3;
 
       .chatInfo {
-        height: 50px;
+        height: 60px;
         background-color: rgb(32, 44, 51);
 
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding: 10px;
+        justify-content: flex-start;
+        padding: 5px;
         color: lightgray;
-      }
-
-      .chatIcons {
-        display: flex;
         gap: 10px;
 
         img {
-          height: 25px;
-          cursor: pointer;
+          margin-top: 5px;
+          margin-left: 10px;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
         }
       }
 
@@ -321,11 +328,16 @@
         .send {
           display: flex;
           align-items: center;
-          gap: 10px;
+          gap: 7px;
 
           img {
             height: 24px;
             cursor: pointer;
+            @include mobile() {
+              margin-left: 2px;
+              height: 24px;
+              cursor: pointer;
+            }
           }
 
           button {
@@ -334,6 +346,9 @@
             color: white;
             background-color: rgb(42, 57, 66);
             cursor: pointer;
+            @include mobile() {
+              padding: 10px 7px;
+            }
           }
         }
       }

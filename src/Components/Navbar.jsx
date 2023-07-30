@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="user">
         <img src={currentUser.photoURL} alt="" />{" "}
         {/*Accessing Each Value that is present in the user Detail */}
-        <span>{currentUser.displayName}</span>
+        <span className="name">{currentUser.displayName}</span>
         <button onClick={() => signOut(auth)}>Logout</button>
       </div>
     </div>
